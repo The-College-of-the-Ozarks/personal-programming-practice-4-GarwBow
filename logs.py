@@ -10,4 +10,7 @@ def g(x):
 x = input("Input the value for x: ")
 x = float(x)
 
-print("g(" + str(x) + ") = " + str(g(x)))
+if x>-10 and x<=7:
+    print("g(" + str(x) + ") = " + str(g(x)))
+else:
+    print('invalid input, number must be in between -10 and 7, program stopped.')

@@ -20,8 +20,17 @@ def mph_to_fts(mph):
 mph = input("Input speed in mph: ")
 mph = float(mph)
 
-print("Speed in kph is", mph_to_kph(mph))
+print('How would you like your speed to be outputted?')
+print('1: kph')
+print('2: ms')
+print('3: fts')
+choice = input('Input the number corresponding with your choice: ')
 
-print("Speed in m/s is", mph_to_ms(mph))
-
-print("Speed in ft/s is", mph_to_fts(mph))
+if choice == '1':
+    print("Speed in kph is", mph_to_kph(mph))
+elif choice == '2':
+    print("Speed in m/s is", mph_to_ms(mph))
+elif choice == '3':
+    print("Speed in ft/s is", mph_to_fts(mph))
+else:
+    print('Error: Invalid menu option, please choose a valid option')
